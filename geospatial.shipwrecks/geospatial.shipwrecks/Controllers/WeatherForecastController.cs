@@ -35,5 +35,10 @@ namespace geospatial.shipwrecks.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        public void MyFunction()
+        {
+
+        }
     }
 }
