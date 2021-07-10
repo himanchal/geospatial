@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{20A2D811-7D0A-4CF9-BCD1-A67895688A30}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="geospatial.shipwrecks/Controllers/WeatherForecastController.cs">
+    <Files>
+      <File FileName="geospatial.shipwrecks/Controllers/WeatherForecastController.cs" Line="38" Column="6" />
+      <File FileName="geospatial.shipwrecks/Properties/launchSettings.json" />
+      <File FileName="geospatial.shipwrecks/appsettings.json" />
+      <File FileName="geospatial.shipwrecks/Program.cs" />
+      <File FileName="geospatial.shipwrecks/Startup.cs" />
+      <File FileName="geospatial.shipwrecks/WeatherForecast.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="geospatial.shipwrecks" expanded="True">
+            <Node name="geospatial.shipwrecks" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="WeatherForecastController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.geospatial.shipwrecks PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
