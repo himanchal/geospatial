@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace geospatial.shipwrecks.Controllers
 {
@@ -11,10 +13,7 @@ namespace geospatial.shipwrecks.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -24,21 +23,13 @@ namespace geospatial.shipwrecks.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<ShipWreck> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
-        [HttpGet]
-        public void MyFunction()
-        {
-
+            //create a mongo client
+            var mongoClient = new MongoClient("mongodb+srv://live2021:live2021pass@cluster0.uv0z8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            var database = mongoClient.GetDatabase("sample_geospatial");
+            var collection = database.GetCollection<ShipWreck>("shipwrecks");
+            return collection.Find(x => x.FeatureType == "Wrecks - Visible").ToList().Take(5);
         }
     }
 }
