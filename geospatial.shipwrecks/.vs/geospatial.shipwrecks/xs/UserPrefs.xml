@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{20A2D811-7D0A-4CF9-BCD1-A67895688A30}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="geospatial.shipwrecks/Controllers/WeatherForecastController.cs">
     <Files>
-      <File FileName="geospatial.shipwrecks/Controllers/WeatherForecastController.cs" Line="31" Column="54" />
-      <File FileName="geospatial.shipwrecks/ShipWreck.cs" Line="21" Column="9" />
+      <File FileName="geospatial.shipwrecks/Controllers/WeatherForecastController.cs" Line="25" Column="18" />
+      <File FileName="geospatial.shipwrecks/ShipWreck.cs" />
+      <File FileName="geospatial.shipwrecks/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +23,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/hsingh/workspace/dotnet/geospatial/geospatial.shipwrecks/geospatial.shipwrecks/Controllers/WeatherForecastController.cs" relfile="geospatial.shipwrecks/Controllers/WeatherForecastController.cs" line="37" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

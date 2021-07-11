@@ -29,7 +29,15 @@ namespace geospatial.shipwrecks.Controllers
             var mongoClient = new MongoClient("mongodb+srv://live2021:live2021pass@cluster0.uv0z8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
             var database = mongoClient.GetDatabase("sample_geospatial");
             var collection = database.GetCollection<ShipWreck>("shipwrecks");
-            return collection.Find(x => x.FeatureType == "Wrecks - Visible").ToList().Take(5);
+            try
+            {
+                return collection.Find(x => x.FeatureType == "Wrecks - Visible").ToList().Take(5);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }
+    
